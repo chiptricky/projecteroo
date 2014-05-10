@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 260px;
 	height: 100%;
 	top: 0;
-	z-index: 10;
+	z-index: 20;
 	text-align: left;
 }
 
@@ -214,9 +214,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #menuToggle {
 	position: absolute;
-	top: 20px;
-	left: 0;
-	z-index: 11;
+	top: 10px;
+	left: 10px;
+	/*z-index: 20;*/
 	display: block;
 	text-align: center;
 	font-size: 14px;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 40px;
 	line-height: 40px;
 	cursor: pointer;
-	background: rgba(0,0,0,0.25);
+	background: rgba(0,0,0, 0.95);
 	-webkit-transition: all .1s ease-in-out;
 	   -moz-transition: all .1s ease-in-out;
 		-ms-transition: all .1s ease-in-out;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #menuToggle:hover {
 	color: #ffffff;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.55);
 	-webkit-transition: all .1s ease-in-out;
 	   -moz-transition: all .1s ease-in-out;
 		-ms-transition: all .1s ease-in-out;
@@ -248,8 +248,34 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 
+#top_headerwrap {
+	background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    /*text-align: right;*/
+   	padding-right: 60px;
+}
+
+#top_headerwrap h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	margin: 15px;
+}
+
+#top_headerwrap h1.menu-open {
+	right: 90px;
+}
+
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+	background: url(../img/bonnaroo_aerial.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
@@ -328,7 +354,12 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 .about {
-	background-image: url(../img/about-sep.jpg);
+	background-image: url(../img/bonnaroo_crowd.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 /* Portfolio Wrap Section */
@@ -428,7 +459,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-	background-image: url(../img/contact-sep.jpg);
+	background-image: url(../img/bonnaroo_crowd.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #contactwrap label {
